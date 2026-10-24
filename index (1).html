@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio: Himanshu Yadav | Personal Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <h1>Himanshu Yadav</h1>
+    <p class="tagline">B.Tech Computer Science Engineering student.</p>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a> |
+      <a href="#about">About Me</a> |
+      <a href="#skills">Skills</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#contact">Contact Information</a>
+    </nav>
+
+    <!-- Replace profile.jpg with your photograph's filename -->
+    
+    <div class="profile-container">
+    <img
+      src="profile.jpg"
+      alt="Himanshu Yadav"
+      class="profile-photo"
+    >
+  </div>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        I’m a B.Tech Computer Science Engineering student with a strong interest in software development, web technologies, and problem-solving. I enjoy building practical projects, learning new technologies, and continuously improving my technical skills. I’m looking forward to applying my knowledge to real-world challenges and growing as a software developer.
+      </p>
+      
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul class="projects">
+        <li>
+          <a href="https://github.com/hy171745-byte/python-program-collection.git
+          ">Python Programm Collection</a>
+          <p>A collection of Python programming projects focused on building strong programming fundamentals and problem-solving skills. Includes projects on Factorial, Fibonacci Series, and basic Python program structure, making it ideal for beginners to practice and improve their coding skills.</p>
+        </li>
+
+        <li>
+          <a href="https://studentreadinglist-nine.vercel.app/
+          ">Code with AI Quiz</a>
+          <p>An interactive quiz website designed to test your knowledge, improve learning, and make practicing fun. Built using HTML, CSS, and JavaScript with a simple and user-friendly interface.</p>
+        </li>
+
+        <li>
+          <a href="https://quiz-rouge-zeta.vercel.app/">Book Reading List Application</a>
+          <p>A simple and responsive Student Reading List web app that helps you organize your books, track reading progress, and manage reading statuses such as Want to Read, Reading, and Finished. Built with a clean interface for a smooth and enjoyable reading experience..</p>
+        </li>
+      </ul>
+
+     
+    </section>
+
+    <section id="weather">
+      <h2>Weather</h2>
+
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter a city"
+      >
+
+      <button id="weatherButton">Get Weather</button>
+
+      <div id="weatherResult">
+        Enter a city to see the weather.
+      </div>
+    </section>
+  </main>
+  <section id="aiChatSection" class="ai-chat">
+    <h2>Ask My AI Assistant</h2>
+  
+    <p>
+      Ask questions about this portfolio,
+      projects, and technologies.
+    </p>
+  
+    <div
+      id="chatMessages"
+      aria-live="polite"
+    ></div>
+  
+    <div class="chat-controls">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Ask a question..."
+      />
+  
+      <button id="sendButton" type="button">
+        Send
+      </button>
+    </div>
+  
+    <p id="chatStatus" role="status"></p>
+  
+    <p class="chat-note">
+      AI chat is available during the local
+      classroom demonstration only.
+    </p>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <h2>Contact Information</h2>
+    <p>Email:
+      <a href="mailto:hy171745@gmail.com">hy171745@gmail.com</a>
+    </p>
+    <p>GitHub:
+      <a href="hy171745-byte" target="_blank" rel="noopener noreferrer">ravikantsharma06</a>
+    </p>
+  </footer>
+
+  <button id="themeToggle">Switch to Dark Mode</button>
+
+  <script src="script.js"></script>
+  <script src="config.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
